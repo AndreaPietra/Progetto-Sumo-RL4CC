@@ -1,0 +1,13 @@
+{
+  "env_name": "SumoEnv",
+  "min_time": 0,
+  "max_time": 1800,
+  "time_step": 10,
+  "agents": ["clusterJ1_J3_J4_J7"],
+  "net_file": "C:/Users/andre/OneDrive/Desktop/Sumo/Tesi-Sumo/singolo_incrocio.net.xml",
+  "route_file": "C:/Users/andre/OneDrive/Desktop/Sumo/Tesi-Sumo/singolo_incrocio.rou.xml",
+  "use_gui": false,
+  "single_agent": false,
+  "fixed_ts": false,
+  "additional_sumo_cmd": "--save-state.period 60 --save-state.prefix C:/Users/andre/OneDrive/Desktop/Sumo/Tesi-Sumo/logs/DQN_Baseline_warmup/warmupState"
+}

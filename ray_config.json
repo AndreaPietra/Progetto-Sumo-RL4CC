@@ -1,0 +1,40 @@
+{
+  "training": {
+    "batch_size": 128,
+    "num_train_batches": 2,
+    "lr": 0.001,
+    "num_steps_sampled_before_learning_starts": 0,
+    "target_network_update_freq": 256
+  },
+  "rollouts": {
+    "num_rollout_workers": 1,
+    "duration_per_worker": 1,
+    "duration_unit": "episodes"
+  },
+  "callbacks": {
+    "callbacks_class": "RL4CC.callbacks.base_callbacks.BaseCallbacks"
+  },
+  "debugging": {
+    "log_level": "ERROR",
+    "logger_config": {}
+  },
+  "evaluation": {
+    "evaluation_config": {
+      "max_time": 1800,
+      "out_csv_name": "evaluation_csv"
+    },
+    "evaluation_duration_per_worker": 1,
+    "evaluation_duration_unit": "episodes"
+  },
+  "experimental": {
+    "_enable_new_api_stack": false
+  },
+  "env_runners": {
+    "exploration_config": {
+      "type": "EpsilonGreedy",
+      "initial_epsilon": 1.0,
+      "final_epsilon": 0.02,
+      "epsilon_timesteps": 15000
+    }
+  }
+}
