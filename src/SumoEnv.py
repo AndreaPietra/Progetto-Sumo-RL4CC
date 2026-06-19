@@ -45,6 +45,17 @@ class SumoEnv(BaseMultiAgentEnvironment, SumoEnvironment):
         self.out_csv_name = env_config.get("out_csv_name", "sumo_csv")
         if self.exp_logdir:
             self.out_csv_name = os.path.join(self.exp_logdir, self.out_csv_name, self.out_csv_name)
+        self.is_evaluation = env_config.get("is_evaluation", False)
+        # render configuration
+        self.render_every_n_training_episodes = env_config.get(
+          "render_every_n_training_episodes", -1
+        )
+        self.render_every_n_training_episodes = env_config.get(
+          "render_every_n_evaluation_episodes", -1
+        )
+        self.render_max_frames = env_config.get(
+          "render_max_frames", (self.max_time-self.min_time) // self.time_step
+        )
         return seed
 
     @property
