@@ -1,0 +1,12 @@
+{
+  "env_name": "SumoEnv",
+  "min_time": 0,
+  "max_time": 1800,
+  "time_step": 10,
+  "agents": ["clusterJ1_J3_J4_J7"],
+  "net_file": "/Users/federicafilippini/Documents/GitHub/Progetto-Sumo-RL4CC/singolo_incrocio.net.xml",
+  "route_file": "/Users/federicafilippini/Documents/GitHub/Progetto-Sumo-RL4CC/singolo_incrocio.rou.xml",
+  "use_gui": true,
+  "single_agent": false,
+  "fixed_ts": true
+}
