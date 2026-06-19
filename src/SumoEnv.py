@@ -50,7 +50,7 @@ class SumoEnv(BaseMultiAgentEnvironment, SumoEnvironment):
         self.render_every_n_training_episodes = env_config.get(
           "render_every_n_training_episodes", -1
         )
-        self.render_every_n_training_episodes = env_config.get(
+        self.render_every_n_evaluation_episodes = env_config.get(
           "render_every_n_evaluation_episodes", -1
         )
         self.render_max_frames = env_config.get(
