@@ -26,7 +26,9 @@ class SumoEnv(BaseMultiAgentEnvironment, SumoEnvironment):
             single_agent=False,
             sumo_seed=seed if seed is not None else "random",
             fixed_ts=env_config.get("fixed_ts", True),
-            out_csv_name=self.out_csv_name
+            out_csv_name=self.out_csv_name,
+            additional_sumo_cmd=env_config.get("additional_sumo_cmd"),
+            render_mode=env_config.get("render_mode")
         )
 
         self._observation_space = Dict({
