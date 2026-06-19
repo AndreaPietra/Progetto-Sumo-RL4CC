@@ -89,3 +89,6 @@ class SumoEnv(BaseMultiAgentEnvironment, SumoEnvironment):
         obs, rewards, dones, info = SumoEnvironment.step(self, action_dict)
         print(info)
         return obs, rewards, dones, dones, self._structure_info(info)
+
+    def render(self):
+        return SumoEnvironment.render(self)
