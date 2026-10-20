@@ -4,9 +4,12 @@
   "max_time": 1800,
   "time_step": 10,
   "agents": ["clusterJ1_J3_J4_J7"],
-  "net_file": "/Users/federicafilippini/Documents/GitHub/Progetto-Sumo-RL4CC/singolo_incrocio.net.xml",
-  "route_file": "/Users/federicafilippini/Documents/GitHub/Progetto-Sumo-RL4CC/singolo_incrocio.rou.xml",
-  "use_gui": true,
+  "net_file": "/home/federica/Progetto-Sumo-RL4CC/singolo_incrocio.net.xml",
+  "route_file": "/home/federica/Progetto-Sumo-RL4CC/singolo_incrocio.rou.xml",
+  "use_gui": false,
   "single_agent": false,
-  "fixed_ts": true
+  "fixed_ts": true,
+  "render_mode": "rgb_array",
+  "render_every_n_training_episodes": 10,
+  "render_every_n_evaluation_episodes": 1
 }

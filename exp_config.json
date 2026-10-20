@@ -1,9 +1,9 @@
 {
   "algorithm": "DQN",
   "env_name": "SumoEnv",
-  "env_config_file": "env_config.json",
+  "env_config_file": "env_config_prova.json",
   "ray_config_file": "ray_config.json",
-  "logdir": "logs/DQN_Baseline_Medium_warmup",
+  "logdir": "logs/DQN_Medium",
   "evaluation_interval": 25,
   "checkpoint_interval": 25,
   "save_manual_checkpoints": true,
@@ -11,6 +11,6 @@
     "verbosity": 1
   },
   "stopping_criteria": {
-    "max_iterations": 1
+    "max_iterations": 100
   }
 }

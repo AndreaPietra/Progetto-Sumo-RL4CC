@@ -12,7 +12,7 @@
     "duration_unit": "episodes"
   },
   "callbacks": {
-    "callbacks_class": "RL4CC.callbacks.base_callbacks.BaseCallbacks"
+    "callbacks_class": "src.rendercallbacks.VideoCallback"
   },
   "debugging": {
     "log_level": "ERROR",
@@ -21,13 +21,17 @@
   "evaluation": {
     "evaluation_config": {
       "max_time": 1800,
-      "out_csv_name": "evaluation_csv"
+      "out_csv_name": "evaluation_csv",
+      "is_evaluation": true
     },
     "evaluation_duration_per_worker": 1,
     "evaluation_duration_unit": "episodes"
   },
   "experimental": {
     "_enable_new_api_stack": false
+  },
+  "environment": {
+     "render_env": true
   },
   "env_runners": {
     "exploration_config": {
